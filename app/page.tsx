@@ -30,6 +30,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import Head from 'next/head';
 
 interface Topic {
   normal: string;
@@ -113,6 +114,12 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <script
+          async
+          src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6041015149608797'
+          crossOrigin='anonymous'></script>
+      </Head>
       <header className='w-full flex justify-between p-4 absolute top-0'>
         <div></div>
         <h1 className='text-4xl font-bold'>Text Tally</h1>
@@ -139,7 +146,7 @@ export default function Home() {
           </DropdownMenuContent>
         </DropdownMenu>
       </header>
-      <main className='grid md:grid-cols-3 min-h-screen px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32 pt-24 pb-6 transition-colors gap-4'>
+      <main className=' grid md:grid-cols-3 min-h-screen px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32 pt-24 pb-6 transition-colors gap-4'>
         <Textarea
           placeholder='Type your text here.'
           className='col-span-3 md:col-span-2 h-full'
