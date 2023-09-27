@@ -25,21 +25,21 @@ To run this project locally:
 
 1. Clone the repository
 
-\`\`\`bash
+```bash
 git clone https://github.com/davidsudar/text-tally.git
-\`\`\`
+```
 
 2. Install the dependencies
 
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. Run the development server
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 4. Open your browser and navigate to `http://localhost:3000`.
 
