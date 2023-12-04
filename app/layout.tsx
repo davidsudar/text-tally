@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'Text Tally - Real-Time Text Analysis & Word Count Tool',
   description:
     'Text Tally is a powerful, real-time text analysis tool that counts words, characters, and lines, calculates reading and speaking times, identifies key words, and much more. It\'s perfect for writers, students, SEO professionals, and anyone who needs to analyze text quickly and efficiently.',
+  keywords: ['https://texttally.com'],
 };
 
 

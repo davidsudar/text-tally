@@ -305,6 +305,143 @@ export default function Home() {
             complete peace of mind.
           </p>
         </div>
+        <div className='flex flex-col gap-2 w-full col-span-3'>
+          <h2 className='text-2xl font-bold'>
+            The Importance of Text Analysis
+          </h2>
+          <p className='text-sm'>
+            Text analysis is a powerful tool in our increasingly digital world,
+            playing a crucial role in various fields. Its importance spans
+            across SEO optimization, academic research, content creation, and
+            beyond. By understanding the intricacies of text, we can unlock a
+            wealth of insights and opportunities.
+          </p>
+          <p className='text-sm'>
+            In the realm of SEO and digital marketing, effective text analysis
+            is key to crafting content that resonates with both search engines
+            and human readers. By analyzing keyword density, readability, and
+            content structure, marketers can significantly improve their
+            website&apos;s search engine rankings, leading to increased
+            visibility and organic traffic.
+          </p>
+          <p className='text-sm'>
+            For students, researchers, and academics, text analysis aids in
+            maintaining clarity and conciseness in writing. It ensures adherence
+            to word limits and enhances the overall readability and impact of
+            academic papers, theses, and research publications.
+          </p>
+          <p className='text-sm'>
+            In business and professional communication, understanding the
+            nuances of text can lead to more effective marketing strategies,
+            clearer internal communications, and better customer engagement.
+            From crafting compelling emails to creating persuasive reports, text
+            analysis tools like Text Tally offer invaluable assistance.
+          </p>
+          <p className='text-sm'>
+            Text Tally empowers users by providing detailed insights into their
+            text&apos;s structure and composition. It&apos;s not just about
+            counting words or sentences; it&apos;s about gaining a deeper
+            understanding of your text&apos;s quality and effectiveness. Whether
+            you&apos;re optimizing a blog post for SEO, writing an academic
+            essay, or drafting a business proposal, Text Tally is designed to
+            enhance your writing process and help you communicate more
+            effectively.
+          </p>
+          <p className='text-sm'>
+            Embrace the power of text analysis with Text Tally and transform the
+            way you write, create, and communicate. Dive into a world where
+            words are not just mere letters, but keys to unlocking greater
+            potential in your content and communication strategies.
+          </p>
+        </div>
+        <div className='flex flex-col gap-2 w-full col-span-3'>
+          <h2 className='text-2xl font-bold'>User Guides and Tutorials</h2>
+          <p className='text-sm'>
+            To get the most out of Text Tally, it&apos;s essential to understand
+            its features and how they can be applied in various scenarios. Here,
+            we provide some guides and tutorials to help you use Text Tally
+            effectively.
+          </p>
+          <h3 className='text-xl font-bold mt-4'>
+            Getting Started with Text Tally
+          </h3>
+          <p className='text-sm'>
+            Begin by entering your text into the provided text area. As you type
+            or paste your content, Text Tally immediately begins analyzing the
+            data, providing real-time insights into word count, sentence
+            structure, and more.
+          </p>
+          <h3 className='text-xl font-bold mt-4'>Analyzing Keyword Density</h3>
+          <p className='text-sm'>
+            For SEO purposes, understanding keyword density is crucial. Text
+            Tally helps you identify the most frequently used words in your
+            text, allowing you to optimize your content for search engines
+            effectively.
+          </p>
+          <h3 className='text-xl font-bold mt-4'>
+            Monitoring Word Count for Academic Writing
+          </h3>
+          <p className='text-sm'>
+            For students and academics, adhering to specific word counts is
+            often a requirement. Use Text Tally to track your word count
+            accurately, ensuring your essays and research papers meet the
+            necessary criteria.
+          </p>
+          <h3 className='text-xl font-bold mt-4'>Enhancing Readability</h3>
+          <p className='text-sm'>
+            Text Tally isn&apos;t just about counting words; it&apos;s about
+            improving the quality of your writing. Use the tool to analyze
+            sentence lengths and structures, helping you craft more readable and
+            engaging content.
+          </p>
+        </div>
+        <div className='flex flex-col gap-2 w-full col-span-3'>
+          <h2 className='text-2xl font-bold'>
+            Privacy and Security at Text Tally
+          </h2>
+          <p className='text-sm'>
+            At Text Tally, we deeply value the privacy and security of our
+            users. We understand that the text you analyze using our tool can be
+            sensitive, confidential, or personal. That&apos;s why we&apos;ve
+            implemented robust measures to ensure the highest levels of privacy
+            and security.
+          </p>
+          <p className='text-sm'>
+            <strong>Local Processing:</strong> One of the fundamental aspects of
+            Text Tally&apos;s approach to privacy is local processing. Your text
+            is processed directly within your browser. This means that none of
+            your data is ever sent to our servers. All the analysis happens on
+            your device, ensuring that your information stays with you and you
+            alone.
+          </p>
+          <p className='text-sm'>
+            <strong>No Data Retention:</strong> When you use Text Tally, you can
+            be assured that your data is not stored, recorded, or monitored. As
+            soon as you close the browser tab, any text you have entered is
+            immediately erased from memory. We have no way of retrieving or
+            viewing your data, ensuring complete confidentiality.
+          </p>
+          <p className='text-sm'>
+            <strong>Continuous Security Updates:</strong> We are committed to
+            maintaining a secure platform. Our team regularly updates Text Tally
+            to address any potential security vulnerabilities and to ensure that
+            our tool remains safe and reliable for everyone.
+          </p>
+          <p className='text-sm'>
+            <strong>User Control and Transparency:</strong> We believe in giving
+            full control to our users. You have complete autonomy over your data
+            and how it&apos;s used within Text Tally. There are no hidden
+            processes or unclear policies. Transparency is key to our approach
+            to privacy and security.
+          </p>
+          <p className='text-sm'>
+            Text Tally is more than just a text analysis tool; it&apos;s a
+            platform you can trust. Your privacy and security are our top
+            priorities, and we continuously work to uphold these standards. Use
+            Text Tally with confidence, knowing that your data remains private,
+            secure, and under your control.
+          </p>
+        </div>
       </main>
     </>
   );
