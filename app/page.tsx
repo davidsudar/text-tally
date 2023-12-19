@@ -242,6 +242,19 @@ export default function Home() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+        <script
+          async
+          src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6041015149608797'
+          crossOrigin='anonymous'></script>
+
+        <ins
+          className='adsbygoogle'
+          style={{ display: 'block' }}
+          data-ad-client='ca-pub-6041015149608797'
+          data-ad-slot='1604169203'
+          data-ad-format='auto'
+          data-full-width-responsive='true'></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         <div className='flex flex-col gap-2 w-full col-span-3'>
           <h2 className='text-2xl font-bold'>How it works</h2>
           <p className='text-sm'>
