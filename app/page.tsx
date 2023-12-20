@@ -1,9 +1,15 @@
 'use client';
 
+declare global {
+  interface Window {
+    adsbygoogle: { [key: string]: unknown }[];
+  }
+}
+
 import { Textarea } from '@/components/ui/textarea';
 import { stopWords } from '@/lib/stopwords';
 import nlp from 'compromise';
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   MoonIcon,
   SunIcon,
@@ -30,7 +36,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import Head from 'next/head';
 
 interface Topic {
   normal: string;
@@ -46,9 +51,14 @@ export default function Home() {
   const [readingTime, setReadingTime] = useState('0 sec');
   const [speakingTime, setSpeakingTime] = useState('0 sec');
   const [paragraphCount, setParagraphCount] = useState(0);
+  const [mounted, setMounted] = useState(false);
   const [keyWords, setKeyWords] = useState<
     { word: string; frequency: number }[]
   >([]);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const text = e.target.value;
@@ -114,12 +124,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <script
-          async
-          src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6041015149608797'
-          crossOrigin='anonymous'></script>
-      </Head>
       <header className='w-full flex justify-between p-4 absolute top-0'>
         <div></div>
         <h1 className='text-4xl font-bold'>Text Tally</h1>
@@ -242,19 +246,23 @@ export default function Home() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-        <script
-          async
-          src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6041015149608797'
-          crossOrigin='anonymous'></script>
+        {mounted && (
+          <>
+            <script
+              async
+              src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6041015149608797'
+              crossOrigin='anonymous'></script>
 
-        <ins
-          className='adsbygoogle'
-          style={{ display: 'block' }}
-          data-ad-client='ca-pub-6041015149608797'
-          data-ad-slot='1604169203'
-          data-ad-format='auto'
-          data-full-width-responsive='true'></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            <ins
+              className='adsbygoogle'
+              style={{ display: 'block' }}
+              data-ad-client='ca-pub-6041015149608797'
+              data-ad-slot='1604169203'
+              data-ad-format='auto'
+              data-full-width-responsive='true'></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          </>
+        )}
         <div className='flex flex-col gap-2 w-full col-span-3'>
           <h2 className='text-2xl font-bold'>How it works</h2>
           <p className='text-sm'>
