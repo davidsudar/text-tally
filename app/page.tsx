@@ -9,21 +9,9 @@ declare global {
 import { Textarea } from '@/components/ui/textarea';
 import { stopWords } from '@/lib/stopwords';
 import nlp from 'compromise';
-import React, { useEffect, useRef, useState } from 'react';
-import {
-  MoonIcon,
-  SunIcon,
-  QuestionMarkCircledIcon,
-} from '@radix-ui/react-icons';
-import { useTheme } from 'next-themes';
+import React, { useEffect, useState } from 'react';
+import { QuestionMarkCircledIcon } from '@radix-ui/react-icons';
 
-import { Button } from '@/components/ui/button';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
 import {
   Accordion,
   AccordionContent,
@@ -36,6 +24,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import Nav from '@/components/nav';
 
 interface Topic {
   normal: string;
@@ -43,7 +32,6 @@ interface Topic {
 }
 
 export default function Home() {
-  const { setTheme } = useTheme();
   const [wordCount, setWordCount] = useState(0);
   const [characterCount, setCharacterCount] = useState(0);
   const [lineCount, setLineCount] = useState(0);
@@ -124,32 +112,6 @@ export default function Home() {
 
   return (
     <>
-      <header className='w-full flex justify-between p-4 absolute top-0'>
-        <div></div>
-        <h1 className='text-4xl font-bold'>Text Tally</h1>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button
-              variant='outline'
-              size='icon'>
-              <SunIcon className='h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0' />
-              <MoonIcon className='absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100' />
-              <span className='sr-only'>Toggle theme</span>
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align='end'>
-            <DropdownMenuItem onClick={() => setTheme('light')}>
-              Light
-            </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setTheme('dark')}>
-              Dark
-            </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setTheme('system')}>
-              System
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-      </header>
       <main className=' grid md:grid-cols-3 min-h-screen px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32 pt-24 pb-6 transition-colors gap-4'>
         <Textarea
           placeholder='Type your text here.'

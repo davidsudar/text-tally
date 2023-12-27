@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Analytics } from '@vercel/analytics/react';
 import Head from 'next/head';
+import Nav from '@/components/nav';
+import { cn } from '@/lib/utils';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -31,11 +33,15 @@ export default function RootLayout({
           src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6041015149608797'
           crossOrigin='anonymous'></script>
       </Head>
-      <body className={inter.className}>
+
+      <body className={cn(inter.className, "flex flex-col gap-4")}>
         <ThemeProvider
           attribute='class'
           defaultTheme='dark'
           enableSystem>
+          <div className='w-full flex justify-between p-4'>
+            <Nav />
+          </div>
           {children}
           <Analytics />
         </ThemeProvider>

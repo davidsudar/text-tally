@@ -1,0 +1,17 @@
+  <!-- public/sitemap.xml -->
+   <xml version="1.0" encoding="UTF-8">
+   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+     <url>
+       <loc>https://www.texttally.net/</loc>
+       <lastmod>2023-12-27</lastmod>
+     </url>
+     <url>
+       <loc>https://www.texttally.net/blog/mastering-seo</loc>
+       <lastmod>2023-12-27</lastmod>
+     </url>
+     <url>
+       <loc>https://www.texttally.net/blog/boosting-digital-engagement</loc>
+       <lastmod>2023-12-27</lastmod>
+     </url>
+   </urlset>
+   </xml>
