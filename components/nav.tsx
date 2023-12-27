@@ -49,7 +49,7 @@ export default function Nav() {
           <NavigationMenuList>
             <NavigationMenuItem>
               <Link
-                href='/docs'
+                href='/'
                 legacyBehavior
                 passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
