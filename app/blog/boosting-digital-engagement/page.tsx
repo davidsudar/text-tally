@@ -1,4 +1,13 @@
+"use client"
+
+import { useEffect, useState } from "react";
+
 export default function SEO() {
+
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => {
+        setMounted(true);
+      }, []);
   return (
     <div className='flex flex-col gap-6'>
       <div className='max-w-4xl mx-auto p-6'>
@@ -6,6 +15,24 @@ export default function SEO() {
           Boosting Digital Engagement: Strategies to Connect and Grow Your
           Online Audience
         </h1>
+
+        {mounted && (
+          <>
+            <script
+              async
+              src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6041015149608797'
+              crossOrigin='anonymous'></script>
+
+            <ins
+              className='adsbygoogle'
+              style={{ display: 'block' }}
+              data-ad-client='ca-pub-6041015149608797'
+              data-ad-slot='1604169203'
+              data-ad-format='auto'
+              data-full-width-responsive='true'></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          </>
+        )}
 
         <h2 className='text-2xl font-semibold mt-4 mb-2'>Introduction:</h2>
         <p className='mb-4'>
